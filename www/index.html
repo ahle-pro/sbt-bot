@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="bot"/>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/botchat.js"></script>
+    <script>
+      BotChat.App({
+        directLine: { secret: "ynXZME7H4es.cwA.Lw0.jw9VzDbn91_vS4IiFpH3Xm32iXwcrF7LlLsamy3Kgkw" },
+        user: { id: 'ahle' },
+        bot: { id: 'ahle-bot2' },
+        resize: 'detect'
+      }, document.getElementById("bot"));
+    </script>
+  </body>
+</html>
