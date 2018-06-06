@@ -4,13 +4,18 @@
     <link href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="bot"/>
+    <div>
+    <button >Connection</button><button >Reconnection</button><button >Flush Cache</button>
+  </div>
+    <div id="bot" style="height: 500px; position: relative"/>
     <script src="https://cdn.botframework.com/botframework-webchat/latest/botchat.js"></script>
     <script>
+            
       BotChat.App({
         directLine: { secret: "ynXZME7H4es.cwA.Lw0.jw9VzDbn91_vS4IiFpH3Xm32iXwcrF7LlLsamy3Kgkw" },
         user: { id: 'ahle' },
         bot: { id: 'ahle-bot2' },
+        //speechOptions: speechOptions,
         resize: 'detect'
       }, document.getElementById("bot"));
     </script>
